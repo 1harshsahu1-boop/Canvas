@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+        <h1><Canvas></Canvas></h1>
+        <div id="editor" contenteditable="true"></div>
+        <br>
+        <button id="Download" type="button">Download</button>
+        <div id="parent">
+            <div id="Backgroundcolor">
+                <h2>Choose background color</h2>
+             <button id="bgc"  onclick="bgcolor('red')" style="background-color: red;"></button>
+            <button id="bgc" onclick="bgcolor('green')" style="background-color: green;"></button>
+            <button id="bgc" onclick="bgcolor('blue')" style="background-color: blue;"></button>
+            <button id="bgc" onclick="bgcolor('yellow')" style="background-color: yellow;"></button>
+             <button id="bgc" onclick="bgcolor('cyan')" style="background-color: cyan;"></button>
+            </div>
+            <div id="Textcolor">
+                <h2>TextColor</h2>
+            <button id="bgc"  onclick="color('red')" style="background-color: red;"></button>
+            <button id="bgc"  onclick="color('green')" style="background-color: green;"></button>
+            <button id="bgc"  onclick="color('blue')" style="background-color: blue;"></button>
+            <button id="bgc" onclick="color('yellow')" style="background-color: yellow;"></button>
+            <button id="bgc" onclick="color('cyan')" style="background-color: cyan;"></button>
+            </div>
+            <div id ="Fontsize">
+                <h2>FontStyle</h2>
+            <button class="font" style="font-family: Arial, sans-serif;" onclick="fontstyle('Arial, sans-serif')">H</button>
+            <button class="font" style="font-family: Algerian, fantasy;" onclick="fontstyle('Algerian, fantasy')">H</button>
+            <button class="font" style="font-family: Harlow Solid Italic, cursive;" onclick="fontstyle('Harlow Solid Italic, cursive')">H</button>
+            <button class="font" style="font-family: 'Great Vibes', cursive;" onclick="fontstyle('Great Vibes, cursive')">H</button>
+            <button class="font" style="font-family: Rockwell, serif;" onclick="fontstyle('Rockwell, serif')">H</button>
+            </div>
+        </div>
+    </center>
+    <script>
+        function bgcolor(clr){
+            document.getElementById('editor').style.backgroundColor = clr
+        }
+        function color(clr){
+            document.getElementById('editor').style.color = clr
+        }
+        function fontstyle(fnt){
+            document.getElementById('editor').style.fontFamily= fnt
+        }
+    </script>  
+</body>
+</html>
